@@ -35,14 +35,14 @@ public class LetterGame {
 
         // Initialize the lists
         try {
-            initLists("letters.csv");
+            initLists("../resources/letters.csv");
         } catch(IOException e) {
             e.printStackTrace();
         }
 
         // Main gameplay loop
         while(!input.equalsIgnoreCase("exit")) {
-            randIndex = random.nextInt(25);
+            randIndex = random.nextInt(26);
 
             System.out.printf("What Spanish letter corresponds to the English letter %c at position %d\n", englishList.get(randIndex), randIndex);
             input = scanner.next();
