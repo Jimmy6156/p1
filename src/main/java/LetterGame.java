@@ -22,7 +22,9 @@ public class LetterGame {
             englishList.add(data[0].charAt(0));
             spanishList.add(data[1].charAt(0));
         }
-
+        
+        //System.out.println(englishList.toString());
+        //System.out.println(spanishList.toString());
         reader.close();
     }
 
@@ -35,7 +37,7 @@ public class LetterGame {
 
         // Initialize the lists
         try {
-            initLists("../resources/letters.csv");
+            initLists("letters.csv");
         } catch(IOException e) {
             e.printStackTrace();
         }
