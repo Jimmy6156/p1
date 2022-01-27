@@ -53,8 +53,15 @@ public class LetterGameTest {
     	   
     }
     
+    @Test
     public void zeroTest() {
-    	
+    	try {
+            initLists("C:/Users/jimmy/p1-1/src/main/resources/letters.csv");
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
+    	assertFalse(englishList.isEmpty());
+    	assertFalse(spanishList.isEmpty());
     }
     
     @Test
