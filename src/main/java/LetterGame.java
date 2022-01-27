@@ -37,7 +37,7 @@ public class LetterGame {
 
         // Initialize the lists
         try {
-            initLists("letters.csv");
+            initLists("C:/Users/jimmy/p1-1/src/main/resources/letters.csv");
         } catch(IOException e) {
             e.printStackTrace();
         }
