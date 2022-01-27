@@ -19,7 +19,7 @@ public class LetterGameTest {
     private Scanner scanner = new Scanner(System.in);
     private String input = null;
     private Random random = new Random();
-    private int max = 25;
+    private int max = 26;
     private int randIndex = random.nextInt(max);
 
     private static ArrayList<Character> englishList = new ArrayList<>();
