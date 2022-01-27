@@ -48,10 +48,6 @@ public class LetterGameTest {
     	   
     }
     
-    public void zeroTest() {
-    	
-    }
-    
     @Test
     public void fullTest() { // Tests all the alphabets
     	try {
@@ -66,7 +62,16 @@ public class LetterGameTest {
     		intTest++;
     	}
     }
-    
-    // single, full set and zero set for testing
+	
+    @Test
+    public void zeroTest() { // Tests if empty
+    	try {
+            initLists("C:/Users/jimmy/p1-1/src/main/resources/letters.csv");
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
+    	assertFalse(englishList.isEmpty());
+    	assertFalse(spanishList.isEmpty());
+    }
     
 }
