@@ -17,13 +17,22 @@ public class LetterGameTest {
     Random random = new Random();
     int randIndex = random.nextInt(26);
 
+    ArrayList<Character> englishList = new ArrayList<>();
+    ArrayList<Character> spanishList = new ArrayList<>();
+    input = scanner.next();
     @Test
     public void testCSVParsing() {
-       ArrayList<Character> englishList = new ArrayList<>();
-       ArrayList<Character> spanishList = new ArrayList<>();
-       input = scanner.next();
+       //ArrayList<Character> englishList = new ArrayList<>();
+       //ArrayList<Character> spanishList = new ArrayList<>();
+      // input = scanner.next();
        assertEquals(englishList.get(randIndex), input.charAt(0));
        assertEquals(spanishList.get(randIndex), input.charAt(0));
     }
+
+}
+
+@Test
+public void testFail() {
+
 
 }
