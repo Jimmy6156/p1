@@ -45,7 +45,7 @@ public class LetterGameTest {
     @Test
     public void testCSVParsing() { // Tests one random letter
     	try {
-            initLists("C:/Users/jimmy/p1-1/src/main/resources/letters.csv");
+            initLists("src/test/resources/letters.csv");
         } catch(IOException e) {
             e.printStackTrace();
         }
@@ -58,7 +58,7 @@ public class LetterGameTest {
     @Test
     public void zeroTest() {
     	try {
-            initLists("C:/Users/jimmy/p1-1/src/main/resources/letters.csv");
+            initLists("src/test/resources/letters.csv");
         } catch(IOException e) {
             e.printStackTrace();
         }
@@ -69,7 +69,7 @@ public class LetterGameTest {
     @Test
     public void fullTest() { // Tests all the alphabets
     	try {
-            initLists("C:/Users/jimmy/p1-1/src/main/resources/letters.csv");
+            initLists("src/test/resources/letters.csv");
         } catch(IOException e) {
             e.printStackTrace();
         }
